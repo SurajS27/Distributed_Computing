@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mcs
+  namespace: activity2
+spec:
+  selector:
+    app: mcp
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80 
+      nodePort: 30011
+  type: NodePort

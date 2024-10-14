@@ -1,0 +1,3 @@
+microk8s.kubectl cp activity2/mcp-674848bfbd-6btcv:/usr/share/nginx/html/index.html ./step4.txt -c frontend 
+
+Sat Sep 28 05:36:08 UTC 2024

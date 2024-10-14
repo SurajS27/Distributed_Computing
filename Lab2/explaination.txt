@@ -1,0 +1,5 @@
+Q1. Nodeport service: what does this portbinding mean?
+Answer - Port binding in NodePort refers to mapping a specific port to a node in a cluster with a service. This helps external trafic to reach suitable pods.
+
+Q2. When you opened a web browser, how this any node ip address in the cluster:<port number> lands up to the correct pod?
+Answer - When we enter URL with port number in browser,Kubernetes helps in routing the request with Kube-proxy. It select the pod suitable for the service, the application running insisde the selected pod receives the request on its mapped port.
